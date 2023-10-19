@@ -820,22 +820,23 @@ class PlayerManager(object):
 
         if audio_uid is not None and not self._video.is_transcode:
             log.debug("PlayerManager::play selecting audio stream index=%s" % audio_uid)
-            self._player.audio = self._video.audio_seq[audio_uid]
+            # self._player.audio = self._video.audio_seq[audio_uid]
 
         if sub_uid is None or sub_uid == -1:
             log.debug("PlayerManager::play selecting subtitle stream (none)")
-            self._player.sub = "no"
+            # self._player.sub = "no"
         else:
             log.debug(
                 "PlayerManager::play selecting subtitle stream index=%s" % sub_uid
             )
             if sub_uid in self._video.subtitle_seq:
-                self._player.sub = self._video.subtitle_seq[sub_uid]
+                pass
+                # self._player.sub = self._video.subtitle_seq[sub_uid]
             elif sub_uid in self._video.subtitle_url:
                 log.debug(
                     "PlayerManager::play selecting external subtitle id=%s" % sub_uid
                 )
-                self.load_external_sub(sub_uid)
+                # self.load_external_sub(sub_uid)
 
     @synchronous("_lock")
     def set_streams(self, audio_uid: int, sub_uid: int):

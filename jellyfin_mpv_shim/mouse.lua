@@ -10,6 +10,7 @@ function mouse_handler()
     if idx ~= last_idx
     then
         last_idx = idx
+        mp.log("info", "UWUSOMETHING_IDK " .. idx)
         mp.commandv("script-message", "shim-menu-select", idx)
     end
 end
