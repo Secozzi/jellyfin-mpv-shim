@@ -108,7 +108,7 @@ class OSDMenu(object):
                 fmt = "\n   **{0}**"
             menu_text += fmt.format(item[0])
 
-        self.playerManager.show_text(menu_text, 2 ** 30, 1)
+        self.playerManager.show_text(menu_text, 2**30, 1)
 
     def mouse_select(self, idx: int):
         if idx < 0 or idx > len(self.menu_list):
@@ -557,9 +557,6 @@ class OSDMenu(object):
                 self.get_settings_toggle(_("Ask to Skip Intros"), "skip_intro_prompt"),
                 self.get_settings_toggle(
                     _("Enable thumbnail previews"), "thumbnail_enable"
-                ),
-                self.get_settings_toggle(
-                    _("Use JellyScrub thumbnails"), "thumbnail_jellyscrub"
                 ),
             ],
         )

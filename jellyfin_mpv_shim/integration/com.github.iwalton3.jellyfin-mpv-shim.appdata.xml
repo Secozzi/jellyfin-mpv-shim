@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2020 Ian Walton <ian@iwalton.com> -->
+<!-- Copyright 2020 Izzie Walton <izzie@iwalton.com> -->
 <component type="desktop-application">
   <id>com.github.iwalton3.jellyfin-mpv-shim</id>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0</project_license>
   <name>Jellyfin MPV Shim</name>
   <summary>Cast-only client for Jellyfin Media Server</summary>
-  <developer_name>Ian Walton</developer_name>
+  <developer id="com.github.iwalton3">
+    <name>Izzie Walton</name>
+  </developer>
 
   <description>
     <p>
@@ -14,7 +16,7 @@
         MPV media player. The application runs in the background and opens MPV only
         when media is cast to the player. The player supports most file formats, allowing you
         to prevent needless transcoding of your media files on the server. The player also has
-        advanced features, such as bulk subtitle updates and launching commands on events. 
+        advanced features, such as bulk subtitle updates and launching commands on events.
     </p>
     <p>
         Please read the detailed instructions on GitHub for more details, including usage
@@ -50,14 +52,25 @@
 
   <launchable type="desktop-id">com.github.iwalton3.jellyfin-mpv-shim.desktop</launchable>
 
-  <url type="homepage">https://github.com/jellyfin/jellyfin-mpv-shim</url>
-
   <provides>
     <binary>jellyfin-mpv-shim</binary>
   </provides>
+  <launchable type="desktop-id">com.github.iwalton3.jellyfin-mpv-shim.desktop</launchable>
 
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="2.7.0" date="2024-05-13">
+      <description>
+        <p>Changes:</p>
+        <ul>
+          <li>Switch to native Jellyfin Trickplay support.</li>
+          <li>Update mpv version to latest git version.</li>
+          <li>Fix support for newer MPV versions. (#377)</li>
+          <li>Make log level configurable. (#379)</li>
+          <li>Fix icon title. (#380)</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.6.0" date="2023-03-07">
       <description>
         <p>Disable built-in MPV playback resuming. (#323)</p>

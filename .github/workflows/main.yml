@@ -10,12 +10,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Setup Python 3.9
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.9
+    - uses: git-for-windows/setup-git-for-windows-sdk@v1
+      with:
+        flavor: minimal
     - name: Install dependencies
       run: |
-        curl -L https://github.com/iwalton3/mpv-winbuild-cmake/releases/download/v20230304-git-362256e/mpv-dev-x86_64-20230304-git-362256e.7z > mpv.7z
+        curl -L https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240513/mpv-dev-x86_64-20240513-git-61f72bd.7z > mpv.7z
         7z x mpv.7z
         mv libmpv-2.dll mpv-2.dll
         pip install wheel
@@ -37,7 +40,7 @@ jobs:
         ./artifacts.sh standard
       shell: bash
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: windows
         path: ${{ github.workspace }}/publish/Installer/*.exe
@@ -46,12 +49,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Setup Python 3.9
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: 3.9
+    - uses: git-for-windows/setup-git-for-windows-sdk@v1
+      with:
+        flavor: minimal
     - name: Install dependencies
       run: |
-        curl -L https://github.com/iwalton3/mpv-winbuild-cmake/releases/download/v20230304-git-362256e/mpv-dev-i686-20230304-git-362256e.7z > mpv.7z
+        curl -L https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20240513/mpv-dev-i686-20240513-git-61f72bd.7z > mpv.7z
         7z x mpv.7z
         mv libmpv-2.dll mpv-2.dll
         pip install wheel
@@ -73,7 +79,7 @@ jobs:
         ./artifacts.sh legacy
       shell: bash
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: windows-legacy32
         path: ${{ github.workspace }}/publish/InstallerLegacy/*.exe
