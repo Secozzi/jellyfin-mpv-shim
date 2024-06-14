@@ -20,16 +20,17 @@ if sys.platform.startswith("win32"):
 packages = [
     "jellyfin_mpv_shim",
     "jellyfin_mpv_shim.display_mirror",
-
 ]
 
 if not sys.platform.startswith("win32"):
-    packages.extend([
-        "jellyfin_mpv_shim.messages",
-        "jellyfin_mpv_shim.default_shader_pack",
-        "jellyfin_mpv_shim.default_shader_pack.shaders",
-        "jellyfin_mpv_shim.integration"
-    ])
+    packages.extend(
+        [
+            "jellyfin_mpv_shim.messages",
+            "jellyfin_mpv_shim.default_shader_pack",
+            "jellyfin_mpv_shim.default_shader_pack.shaders",
+            "jellyfin_mpv_shim.integration",
+        ]
+    )
 
     for dir in os.listdir("jellyfin_mpv_shim/messages"):
         if os.path.isdir("jellyfin_mpv_shim/messages/" + dir + "/LC_MESSAGES"):
@@ -37,7 +38,7 @@ if not sys.platform.startswith("win32"):
 
 setup(
     name="jellyfin-mpv-shim",
-    version="2.7.0.post2",
+    version="2.8.0",
     author="Izzie Walton",
     author_email="izzie@iwalton.com",
     description="Cast media from Jellyfin Mobile and Web apps to MPV.",
