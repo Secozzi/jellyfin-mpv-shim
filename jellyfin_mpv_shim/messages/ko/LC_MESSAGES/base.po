@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-06-05 13:53-0400\n"
-"PO-Revision-Date: 2023-10-11 15:25+0000\n"
-"Last-Translator: HiSkyZen <mchan030704@gmail.com>\n"
+"PO-Revision-Date: 2024-07-28 09:34+0000\n"
+"Last-Translator: aky <arksky@naver.com>\n"
 "Language-Team: Korean <https://translate.jellyfin.org/projects/jellyfin/"
 "jellyfin-desktop/ko/>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.4.2\n"
 "Generated-By: pygettext.py 1.5\n"
 
 #: jellyfin_mpv_shim/bulk_subtitle.py:29
@@ -68,7 +68,7 @@ msgstr "다른 서버를 추가하시겠습니까?"
 
 #: jellyfin_mpv_shim/clients.py:86
 msgid "Adding server failed."
-msgstr "서버 추가 실패 했습니다."
+msgstr "서버 추가에 실패했습니다."
 
 #: jellyfin_mpv_shim/display_mirror/__init__.py:116
 msgid "Ready to cast"
@@ -76,7 +76,7 @@ msgstr "캐스팅 준비 되었습니다"
 
 #: jellyfin_mpv_shim/display_mirror/__init__.py:118
 msgid "Select your media in Jellyfin and play it here"
-msgstr "젤리핀에서 미디어를 선택하고 재생"
+msgstr "젤리핀에서 미디어를 선택하여 재생하십시오."
 
 #: jellyfin_mpv_shim/gui_mgr.py:153
 msgid "Application Log"
@@ -91,7 +91,7 @@ msgid ""
 "Could not add server.\n"
 "Please check your connection information."
 msgstr ""
-"서버를 추가할 수 없었습니다.\n"
+"서버를 추가할 수 없습니다.\n"
 "연결 정보를 확인하십시오."
 
 #: jellyfin_mpv_shim/gui_mgr.py:267
@@ -148,7 +148,7 @@ msgstr "중지"
 
 #: jellyfin_mpv_shim/media.py:139
 msgid " (Transcode)"
-msgstr " 코덱변환"
+msgstr " 코드변환"
 
 #: jellyfin_mpv_shim/menu.py:28
 msgid "White"
@@ -415,36 +415,28 @@ msgid "Ask to Skip Intros"
 msgstr "인트로 건너뛰기전에 항상 물어보기"
 
 #: jellyfin_mpv_shim/menu.py:558
-#, fuzzy
-#| msgid "Always Skip Intros"
 msgid "Always Skip Credits"
-msgstr "항상 인트로를 건너뛰기"
+msgstr "항상 크레딧을 건너뛰기"
 
 #: jellyfin_mpv_shim/menu.py:559
-#, fuzzy
-#| msgid "Ask to Skip Intros"
 msgid "Ask to Skip Credits"
-msgstr "인트로 건너뛰기전에 항상 물어보기"
+msgstr "크레딧 건너뛰기전에 항상 물어보기"
 
 #: jellyfin_mpv_shim/menu.py:561
 msgid "Enable thumbnail previews"
 msgstr "섬네일 미리보기 활성화하기"
 
 #: jellyfin_mpv_shim/player.py:487
-#, fuzzy
-#| msgid "Skipped Intro"
 msgid "Skipped Credits"
-msgstr "인트로 건너뜀"
+msgstr "크레딧 건너뜀"
 
 #: jellyfin_mpv_shim/player.py:487
 msgid "Skipped Intro"
 msgstr "인트로 건너뜀"
 
 #: jellyfin_mpv_shim/player.py:490
-#, fuzzy
-#| msgid "Seek to Skip Intro"
 msgid "Seek to Skip Credits"
-msgstr "인트로 건너뛰기"
+msgstr "크레딧으로 건너뛰기"
 
 #: jellyfin_mpv_shim/player.py:490
 msgid "Seek to Skip Intro"
