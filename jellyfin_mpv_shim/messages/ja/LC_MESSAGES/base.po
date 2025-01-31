@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-06-05 13:53-0400\n"
-"PO-Revision-Date: 2024-07-06 14:41+0000\n"
-"Last-Translator: MC2018 <mc2018.git@gmail.com>\n"
+"PO-Revision-Date: 2025-01-12 18:01+0000\n"
+"Last-Translator: marudosurdo <marudosurdo@gmail.com>\n"
 "Language-Team: Japanese <https://translate.jellyfin.org/projects/jellyfin/"
 "jellyfin-desktop/ja/>\n"
 "Language: ja\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 5.7.2\n"
 "Generated-By: pygettext.py 1.5\n"
 
 #: jellyfin_mpv_shim/bulk_subtitle.py:29
@@ -44,7 +44,7 @@ msgstr "手動: {0} OK, {1} 失敗"
 
 #: jellyfin_mpv_shim/bulk_subtitle.py:163
 msgid "Setting Current..."
-msgstr ""
+msgstr "現在の構成..."
 
 #: jellyfin_mpv_shim/clients.py:75
 msgid "Server URL: "
@@ -415,16 +415,12 @@ msgid "Ask to Skip Intros"
 msgstr "イントロのスキップを尋ねる"
 
 #: jellyfin_mpv_shim/menu.py:558
-#, fuzzy
-#| msgid "Always Skip Intros"
 msgid "Always Skip Credits"
-msgstr "常にイントロをスキップする"
+msgstr "デフォルトでクレジットタイトルをスキップする"
 
 #: jellyfin_mpv_shim/menu.py:559
-#, fuzzy
-#| msgid "Ask to Skip Intros"
 msgid "Ask to Skip Credits"
-msgstr "イントロのスキップを尋ねる"
+msgstr "クレジットタイトルのスッキプを選択"
 
 #: jellyfin_mpv_shim/menu.py:561
 msgid "Enable thumbnail previews"
@@ -439,10 +435,8 @@ msgid "Skipped Intro"
 msgstr "イントロをスキップしました"
 
 #: jellyfin_mpv_shim/player.py:490
-#, fuzzy
-#| msgid "Ask to Skip Intros"
 msgid "Seek to Skip Credits"
-msgstr "イントロのスキップを尋ねる"
+msgstr "クレジットをスキップする"
 
 #: jellyfin_mpv_shim/player.py:490
 msgid "Seek to Skip Intro"
@@ -453,6 +447,8 @@ msgid ""
 "Your remote video is transcoding!\n"
 "Press c to adjust bandwidth settings if this is not needed."
 msgstr ""
+"レモート動画はトランスコード中！\n"
+"必要ではない場合は、帯域幅設定を調整するに「C」を押し下さい。"
 
 #: jellyfin_mpv_shim/player.py:965
 msgid "Season {0} - Episode {1}"
@@ -509,15 +505,15 @@ msgstr "SyncPlayライブラリへのアクセスが拒否されました。"
 
 #: jellyfin_mpv_shim/syncplay.py:150
 msgid "SpeedToSync (x{0})"
-msgstr ""
+msgstr "同期速度 (x{0})"
 
 #: jellyfin_mpv_shim/syncplay.py:161
 msgid "Sync Disabled (Too Many Attempts)"
-msgstr ""
+msgstr "同期が停止（試行回数の上限超過）"
 
 #: jellyfin_mpv_shim/syncplay.py:169
 msgid "SkipToSync (x{0})"
-msgstr ""
+msgstr "SkipToSync (x{0})"
 
 #: jellyfin_mpv_shim/syncplay.py:230
 msgid "SyncPlay enabled."
@@ -545,7 +541,7 @@ msgstr "{0}のグループ"
 
 #: jellyfin_mpv_shim/syncplay.py:624 jellyfin_mpv_shim/video_profile.py:190
 msgid "None (Disabled)"
-msgstr ""
+msgstr "無し（無効）"
 
 #: jellyfin_mpv_shim/syncplay.py:628
 msgid "New Group"
@@ -556,22 +552,24 @@ msgid ""
 "MPV Shim v{0} Update Available\n"
 "Open menu (press c) for details."
 msgstr ""
+"MPV シム v{0} アップデートが利用可能\n"
+"詳細については、メニューを開きます (c を押します)。"
 
 #: jellyfin_mpv_shim/utils.py:307
 msgid "Unkn"
-msgstr ""
+msgstr "未知"
 
 #: jellyfin_mpv_shim/utils.py:308
 msgid " Forced"
-msgstr ""
+msgstr " 強制"
 
 #: jellyfin_mpv_shim/video_profile.py:18
 msgid "Generic (FSRCNNX)"
-msgstr ""
+msgstr "ジェネリック (FSRCNNX)"
 
 #: jellyfin_mpv_shim/video_profile.py:19
 msgid "Generic High (FSRCNNX x16)"
-msgstr ""
+msgstr "ジェネリック 高解像度 (FSRCNNX x16)"
 
 #: jellyfin_mpv_shim/video_profile.py:20
 msgid "Anime4K x4 Faithful (For SD)"

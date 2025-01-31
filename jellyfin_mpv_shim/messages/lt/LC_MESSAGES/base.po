@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2024-06-05 13:53-0400\n"
-"PO-Revision-Date: 2024-04-04 12:57+0000\n"
-"Last-Translator: Kristijonas Kuzmickas <kristijonaskuzmickas@gmail.com>\n"
+"PO-Revision-Date: 2025-01-14 03:26+0000\n"
+"Last-Translator: Nerijus <nerijusn76@gmail.com>\n"
 "Language-Team: Lithuanian <https://translate.jellyfin.org/projects/jellyfin/"
 "jellyfin-desktop/lt/>\n"
 "Language: lt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 5.7.2\n"
 "Generated-By: pygettext.py 1.5\n"
 
 #: jellyfin_mpv_shim/bulk_subtitle.py:29
@@ -66,7 +66,7 @@ msgstr "Serveris sėkmingai pridėtas."
 
 #: jellyfin_mpv_shim/clients.py:83
 msgid "Add another server?"
-msgstr "Pridėti dar vieną serverį?"
+msgstr "Pridėti kitą serverį?"
 
 #: jellyfin_mpv_shim/clients.py:86
 msgid "Adding server failed."
@@ -74,7 +74,7 @@ msgstr "Nepavyko pridėti serverio."
 
 #: jellyfin_mpv_shim/display_mirror/__init__.py:116
 msgid "Ready to cast"
-msgstr "Pasiruošęs siųsti"
+msgstr "Pasiruošęs perduoti"
 
 #: jellyfin_mpv_shim/display_mirror/__init__.py:118
 msgid "Select your media in Jellyfin and play it here"
@@ -166,7 +166,7 @@ msgstr "Juoda"
 
 #: jellyfin_mpv_shim/menu.py:31
 msgid "Cyan"
-msgstr "žalsvai mėlyna"
+msgstr "Žalsvai mėlyna"
 
 #: jellyfin_mpv_shim/menu.py:32
 msgid "Blue"
@@ -390,7 +390,7 @@ msgstr "Turinio"
 
 #: jellyfin_mpv_shim/menu.py:549
 msgid "Use Web Seek Pref"
-msgstr ""
+msgstr "Naudoti Žiniatinklio Paieškos Nustatymus"
 
 #: jellyfin_mpv_shim/menu.py:550
 msgid "Display Mirroring"
@@ -417,46 +417,40 @@ msgid "Ask to Skip Intros"
 msgstr "Klausti ar praleisti intro"
 
 #: jellyfin_mpv_shim/menu.py:558
-#, fuzzy
-#| msgid "Always Skip Intros"
 msgid "Always Skip Credits"
-msgstr "Visada praleisti intro"
+msgstr "Visada praleisti pabaigos titrus"
 
 #: jellyfin_mpv_shim/menu.py:559
-#, fuzzy
-#| msgid "Ask to Skip Intros"
 msgid "Ask to Skip Credits"
-msgstr "Klausti ar praleisti intro"
+msgstr "Klausti, ar praleisti pabaigos titrus"
 
 #: jellyfin_mpv_shim/menu.py:561
 msgid "Enable thumbnail previews"
 msgstr "Įjungti miniatūrų peržiūrą"
 
 #: jellyfin_mpv_shim/player.py:487
-#, fuzzy
-#| msgid "Skipped Intro"
 msgid "Skipped Credits"
-msgstr "Praleistas intro"
+msgstr "Titrai praleisti"
 
 #: jellyfin_mpv_shim/player.py:487
 msgid "Skipped Intro"
 msgstr "Praleistas intro"
 
 #: jellyfin_mpv_shim/player.py:490
-#, fuzzy
-#| msgid "Ask to Skip Intros"
 msgid "Seek to Skip Credits"
-msgstr "Klausti ar praleisti intro"
+msgstr "Klausti, ar praleisti titrus"
 
 #: jellyfin_mpv_shim/player.py:490
 msgid "Seek to Skip Intro"
-msgstr ""
+msgstr "Klausti, ar praleisti pradžios titrus"
 
 #: jellyfin_mpv_shim/player.py:598
 msgid ""
 "Your remote video is transcoding!\n"
 "Press c to adjust bandwidth settings if this is not needed."
 msgstr ""
+"Jūsų nuotolinis vaizdo įrašas perkoduojamas!\n"
+"Paspauskite c pakeisti duomenų srauto nustatymus, jei tai nereikalinga."
 
 #: jellyfin_mpv_shim/player.py:965
 msgid "Season {0} - Episode {1}"
@@ -497,7 +491,7 @@ msgstr "SVP yra Išjungta"
 
 #: jellyfin_mpv_shim/syncplay.py:21
 msgid "The specified SyncPlay group does not exist."
-msgstr "SyncPlay"
+msgstr "Nurodyta SyncPlay grupė neegzistuoja."
 
 #: jellyfin_mpv_shim/syncplay.py:22
 msgid "Creating SyncPlay groups is not allowed."
@@ -525,49 +519,51 @@ msgstr ""
 
 #: jellyfin_mpv_shim/syncplay.py:230
 msgid "SyncPlay enabled."
-msgstr ""
+msgstr "SyncPlay įjungtas."
 
 #: jellyfin_mpv_shim/syncplay.py:250
 msgid "SyncPlay disabled."
-msgstr ""
+msgstr "SyncPlay išjungtas."
 
 #: jellyfin_mpv_shim/syncplay.py:313
 msgid "{0} has joined."
-msgstr ""
+msgstr "{0} prisijungė."
 
 #: jellyfin_mpv_shim/syncplay.py:315
 msgid "{0} has left."
-msgstr ""
+msgstr "{0} atsijungė."
 
 #: jellyfin_mpv_shim/syncplay.py:317
 msgid "{0} is buffering."
-msgstr ""
+msgstr "{0} kraunasi."
 
 #: jellyfin_mpv_shim/syncplay.py:615
 msgid "{0}'s Group"
-msgstr ""
+msgstr "{0} Grupė"
 
 #: jellyfin_mpv_shim/syncplay.py:624 jellyfin_mpv_shim/video_profile.py:190
 msgid "None (Disabled)"
-msgstr ""
+msgstr "Nėra (Išjungta)"
 
 #: jellyfin_mpv_shim/syncplay.py:628
 msgid "New Group"
-msgstr ""
+msgstr "Nauja Grupė"
 
 #: jellyfin_mpv_shim/update_check.py:67
 msgid ""
 "MPV Shim v{0} Update Available\n"
 "Open menu (press c) for details."
 msgstr ""
+"MPV Shim v{0} galimas atnaujinimas\n"
+"Atidarykite meniu (paspauskite \"c\") detalesniam aprašymui."
 
 #: jellyfin_mpv_shim/utils.py:307
 msgid "Unkn"
-msgstr ""
+msgstr "Nežinoma"
 
 #: jellyfin_mpv_shim/utils.py:308
 msgid " Forced"
-msgstr ""
+msgstr " Priverstinai"
 
 #: jellyfin_mpv_shim/video_profile.py:18
 msgid "Generic (FSRCNNX)"
@@ -599,7 +595,7 @@ msgstr ""
 
 #: jellyfin_mpv_shim/video_profile.py:27
 msgid "Anime4K x2 Perceptual + Deblur (For HD)"
-msgstr ""
+msgstr "Anime4K x2 Perceptual + Deblur (HD Raiškai)"
 
 #: jellyfin_mpv_shim/video_profile.py:204
 msgid "Select Shader Profile"
