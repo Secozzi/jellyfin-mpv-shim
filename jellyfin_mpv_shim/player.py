@@ -591,7 +591,6 @@ class PlayerManager(object):
         self.external_subtitles_rev = {}
 
         self.upd_player_hide()
-        self.configure_streams()
         self.update_subtitle_visuals()
 
         if win_utils and settings.raise_mpv and is_initial_play:
@@ -852,37 +851,11 @@ class PlayerManager(object):
         return default
 
     @synchronous("_lock")
-    def configure_streams(self):
-        audio_uid = self._video.aid
-        sub_uid = self._video.sid
-
-        if audio_uid is not None and not self._video.is_transcode:
-            log.info("PlayerManager::play selecting audio stream index=%s" % audio_uid)
-            self._player.audio = self._video.audio_seq[audio_uid]
-
-        if sub_uid is None or sub_uid == -1:
-            log.info("PlayerManager::play selecting subtitle stream (none)")
-            self._player.sub = "no"
-        else:
-            log.info(
-                "PlayerManager::play selecting subtitle stream index=%s" % sub_uid
-            )
-            if sub_uid in self._video.subtitle_seq:
-                self._player.sub = self._video.subtitle_seq[sub_uid]
-            elif sub_uid in self._video.subtitle_url:
-                log.info(
-                    "PlayerManager::play selecting external subtitle id=%s" % sub_uid
-                )
-                self.load_external_sub(sub_uid)
-
-    @synchronous("_lock")
     def set_streams(self, audio_uid: int, sub_uid: int):
         need_restart = self._video.set_streams(audio_uid, sub_uid)
 
         if need_restart:
             self.restart_playback()
-        else:
-            self.configure_streams()
         self.timeline_handle()
 
     @synchronous("_lock")
