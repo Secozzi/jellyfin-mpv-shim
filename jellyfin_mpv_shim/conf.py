@@ -44,7 +44,7 @@ class Settings(SettingsBase):
     transcode_hevc: bool = False
     transcode_av1: bool = False
     transcode_4k: bool = False
-    transcode_dolby_vision: bool = True
+    transcode_dolby_vision: bool = False
     allow_transcode_to_h265: bool = False
     prefer_transcode_to_h265: bool = False
     remote_kbps: int = 10000
@@ -55,12 +55,12 @@ class Settings(SettingsBase):
     fullscreen: bool = True
     enable_gui: bool = True
     media_key_seek: bool = False
-    mpv_ext: bool = sys.platform.startswith("darwin")
-    mpv_ext_path: Optional[str] = None
-    mpv_ext_ipc: Optional[str] = None
+    mpv_ext: bool = True
+    mpv_ext_path: Optional[str] = "/usr/bin/mpv"
+    mpv_ext_ipc: Optional[str] = "/tmp/mpvsocket"
     mpv_ext_start: bool = True
-    mpv_ext_no_ovr: bool = False
-    enable_osc: bool = True
+    mpv_ext_no_ovr: bool = True
+    enable_osc: bool = False
     use_web_seek: bool = False
     display_mirroring: bool = False
     log_decisions: bool = False
@@ -82,7 +82,7 @@ class Settings(SettingsBase):
     kb_pause: str = "space"
     kb_fullscreen: str = "f"
     kb_debug: str = "~"
-    kb_kill_shader: str = "k"
+    kb_kill_shader: str = "ö"
     seek_up: int = 60
     seek_down: int = -60
     seek_right: int = 5
